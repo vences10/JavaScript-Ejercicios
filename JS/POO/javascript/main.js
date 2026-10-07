@@ -39,6 +39,7 @@ class Persona {
             {this.carrito.push(producto)});
     }//agregar productos
 
+//polimorfismo y abstracción
 calcularTotal() {
         let total = this.carrito.reduce((suma, producto) => suma + producto.precio, 0);
         return total;
@@ -49,8 +50,12 @@ calcularTotal() {
 
 // Clase Usuario (hereda de Persona)
 class Usuario extends Persona {
+    //propiedad tipo no es una variable pero se declara así  por POO
+tipo;
     constructor(id, nombre, email) {
-        super(id, nombre, email); // Llama al constructor de Persona
+        // Llama al constructor de Persona, se utiliza super porque por defecto en 
+        // POO al llamar a la clase padre su utiliza la palabra super
+        super(id, nombre, email); 
         this.tipo = "Regular";
     }
 
@@ -64,6 +69,7 @@ class Usuario extends Persona {
         return total;
     }
 }
+
 // Clase UsuarioPro (hereda de Persona)
 class UsuarioPro extends Persona {
     constructor(id, nombre, email) {

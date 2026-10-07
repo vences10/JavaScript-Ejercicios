@@ -1,0 +1,41 @@
+/*Selectores*/
+p{
+    color: blue;
+}
+
+img{
+    width: 300px;
+}
+
+.sobre_mi{
+    color: aqua;
+}
+
+#titulo{
+    color: violet;
+}
+
+/*Selector universal*/
+*{
+   
+    margin: 0;
+}
+
+h1,h2,h3{
+    color: brown;
+}
+
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#codigo{
+    width: 200px;
+
+}

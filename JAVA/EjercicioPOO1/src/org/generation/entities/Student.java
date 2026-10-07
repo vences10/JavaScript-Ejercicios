@@ -1,4 +1,4 @@
-package entities;
+package org.generation.entities;
 
 public class Student {
     String firstName;
@@ -7,7 +7,7 @@ public class Student {
     int grade;
     int year;
 
-    // 🔹 Constructores
+    // Constructores
     public Student(String firstName, String lastName, int registration, int grade, int year) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -32,7 +32,7 @@ public class Student {
         this.year = 1;
     }//constructor 3 Student
 
-    // 🔹 Métodos
+    // Métodos
     public void printFullName() {
         System.out.println(firstName + " " + lastName);
     }
